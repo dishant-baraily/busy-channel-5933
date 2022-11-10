@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #card-contain{
+      display: flex;
+      border: 1px solid red;
+      justify-content: space-between;
+    }
+    #card-contain > div > img{
+      width: 100%;
+    }
+    #card-contain > div {
+      width: 20%;
+    }
+  </style>
+</head>
+<body>
+  <div id="card-contain">
+
+  </div>
+  <button onclick="prev()">prev</button>
+  <button onclick="next()">next</button>
+</body>
+</html>
+<script>
+var details = 
+[
+  [
+    {
+        img:"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-dream-cover-spf15-mattifying-compact-10-latte-12775602356307.jpg?v=1619106501",
+        name:"Dream Cover SPF15 Mattifying Compact",
+        price:499
+    },
+    {
+        img:"https://cdn.shopify.com/s/files/1/0906/2558/products/382512089-mettle-priming-balm-01.jpg?v=1648654861",
+        name:"Mettle Priming Balm",
+        price:1099
+    },
+    {
+        img:"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-all-set-to-go-banana-powder-13289662218323.jpg?v=1619115199",
+        name:"All Set To Go Banana Powder",
+        price:599
+    },
+    {
+        img:"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-rage-for-coverage-24hr-foundation-07-vanilla-latte-fair-golden-undertone-28391223263315.jpg?v=1623073552",
+        name:"Rage For Coverage 24Hr Foundation",
+        price:799
+    }
+  ],
+  [
+    {
+        img:"https://cdn.shopify.com/s/files/1/0906/2558/products/382512089-mettle-priming-balm-01.jpg?v=1648654861",
+        name:"Mettle Priming Balm",
+        price:1099
+    },
+    {
+        img:"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-dream-cover-spf15-mattifying-compact-10-latte-12775602356307.jpg?v=1619106501",
+        name:"Dream Cover SPF15 Mattifying Compact",
+        price:499
+    },
+    {
+        img:"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-all-set-to-go-banana-powder-13289662218323.jpg?v=1619115199",
+        name:"All Set To Go Banana Powder",
+        price:599
+    },
+    {
+        img:"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-all-set-to-go-banana-powder-13289662218323.jpg?v=1619115199",
+        name:"All Set To Go Banana Powder",
+        price:599
+    }
+    
+  ]
+]
+function prev(){
+for(var i=0; i<details.length; i++){
+  details[i].forEach(elm => {
+      let card = document.createElement("div");
+      card.setAttribute("class",card)
+
+      let img = document.createElement("img");
+      img.setAttribute("src",elm.img);
+
+      let name = document.createElement("p");
+      name.innerText = elm.name;
+
+      let price = document.createElement("p");
+      price.innerText = elm.price
+
+      card.append(img,name,price);
+      document.getElementById("card-contain").append(card);
+
+  });
+}
+}
+  </script>
