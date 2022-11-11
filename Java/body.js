@@ -37,10 +37,10 @@ var myImage = document.getElementById("mainImage");
     [
         
             {
-                href:"https://in.sugarcosmetics.com/products/dream-cover-spf15-mattifying-compact",
-                img:"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-dream-cover-spf15-mattifying-compact-10-latte-12775602356307.jpg?v=1619106501",
-                name:"Dream Cover SPF15 Mattifying Compact",
-                price:499
+                href:"https://in.sugarcosmetics.com/products/matte-attack-transferproof-lipstick",
+                img:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_6f55bcac-3e42-4253-88ee-cec0fa43c62a.jpg?v=1645608270",
+                name:"Matte Attack Transferproof Lipstick",
+                price:699
             },
             {
                 href:"https://in.sugarcosmetics.com/products/mettle-priming-balm",
@@ -49,15 +49,15 @@ var myImage = document.getElementById("mainImage");
                 price:1099
             },
             {
-                href:"https://in.sugarcosmetics.com/products/all-set-to-go-banana-powder",
-                img:"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-all-set-to-go-banana-powder-13289662218323.jpg?v=1619115199",
-                name:"All Set To Go Banana Powder",
-                price:599
+                href:"https://in.sugarcosmetics.com/products/base-of-glory-pore-minimizing-primer",
+                img:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_e9355d54-6ddb-4aa4-bdfc-176a676db886.jpg?v=1657257149",
+                name:"Base Of Glory Pore Minimizing Primer",
+                price:799
             },
             {
-                href:"https://in.sugarcosmetics.com/products/rage-for-coverage-24hr-foundation",
-                img:"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-rage-for-coverage-24hr-foundation-07-vanilla-latte-fair-golden-undertone-28391223263315.jpg?v=1623073552",
-                name:"Rage For Coverage 24Hr Foundation",
+                href:"https://in.sugarcosmetics.com/products/smudge-me-not-mini-liquid-lipstick-set-power-up-your-pout",
+                img:"https://cdn.shopify.com/s/files/1/0906/2558/products/WBG1_09f0cf83-792a-4185-8882-5e5e6909a459.jpg?v=1657814596",
+                name:"Smudge Me Not Mini Liquid Lipstick Set",
                 price:799
             }
         
@@ -79,16 +79,16 @@ var myImage = document.getElementById("mainImage");
         let name = document.createElement("p");
         name.innerText = elm.name;
 
-        let price = document.createElement("p");
+        let price = document.createElement("h1");
         price.innerText = "₹" + elm.price;
 
         let btn = document.createElement("button");
         btn.innerText = "Add To Cart";
         btn.setAttribute("click",function() {
             let prodetails = {
-                img: img.value,
-                name: name.value,
-                price: price.value
+                img: elm.img,
+                name: elm.name,
+                price: elm.price
             }
             items.push(prodetails);
             localStorage.setItem("cart",JSON.stringify(items));
@@ -96,5 +96,37 @@ var myImage = document.getElementById("mainImage");
         atag.append(card);
         card.append(img,name,price,btn);
         document.querySelector(".card-contain").append(atag);
+
+    });
+    details.forEach(elm => {
+        let atag =  document.createElement("a");
+        atag.setAttribute("href",elm.href);
+
+        let card = document.createElement("div");
+        card.setAttribute("class",card);
+
+        let img = document.createElement("img");
+        img.setAttribute("src",elm.img);
+
+        let name = document.createElement("p");
+        name.innerText = elm.name;
+
+        let price = document.createElement("h1");
+        price.innerText = "₹" + elm.price;
+
+        let btn = document.createElement("button");
+        btn.innerText = "Add To Cart";
+        btn.setAttribute("click",function() {
+            let prodetails = {
+                img: elm.img,
+                name: elm.name,
+                price: elm.price
+            }
+            items.push(prodetails);
+            localStorage.setItem("cart",JSON.stringify(items));
+        })
+        atag.append(card);
+        card.append(img,name,price,btn);
+        document.querySelector(".card-contain1").append(atag);
 
     });

@@ -19,8 +19,8 @@
     height: 128px;
     position: fixed;
     top: 0;
-    right: 0;
     left: 0;
+    right: 0;
 }
 .nav-logo{
     width: 270px;
@@ -130,7 +130,7 @@
 }
 .make-hover:hover > div{
     display: grid;
-    position: relative;
+    
     grid-template-columns: repeat(3,1fr);
 }
 /* .make-hover > div > div{
@@ -165,7 +165,7 @@
     margin-top: 10px;
 }
 #body{
-
+    height: 20000px;
     margin-left: -8px;
     width: 101%;
     border: 1px solid red;
@@ -238,4 +238,110 @@
     width: 68%;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
+}
+.card-contain > a > div > button{
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 12px;
+    height: 44px;
+    width: 222px;
+    border: none;
+    font-family: sans-serif;
+}
+.card-contain > a > div > h1{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+/* slider */
+.swiper {
+    width: 94%;
+    border-radius: 12px;
+    margin: auto;
+    margin-top: 20px;
+    height: 290px;
+  }
+  .swiper > .swiper-btn{
+      display: none;
+  }
+  .swiper:hover > .swiper-btn{
+    display: block;
+}
+  .swiper-slide {
+    border-radius: 12px;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    width: 494px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .swiper-slide > a {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper1{
+    width: 100%;
+    height: 100%;
+  }
+  .swiper1 > img{
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+  }
+  .card-contain1{
+    width: 94%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.card-contain1 > a{
+    display: block;
+    width: 23%;
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    font-family: sans-serif;
+    border-radius: 12px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
+}
+.card-contain1 > a > div > img{
+    background-color: #F2F2F2;
+    height: 60%;
+    width: 68%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.card-contain1 > a > div > button{
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 12px;
+    height: 44px;
+    width: 222px;
+    border: none;
+    font-family: sans-serif;
+}
+.card-contain1 > a > div > h1{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: sans-serif;
 }
