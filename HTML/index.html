@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign up Page</title>
+  <style>
+      /* Write all necessery css here  */
+      form{
+        width: 370px;
+        height: 360px;
+        font-size: 20px;
+        padding-top: 40px;
+        text-align: left;
+        padding-left: 30px;
+        border-radius: 10px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        margin: auto;
+      }
+      form > div{
+        margin-top: 10px;
+      }
+      form > div > input{
+        width: 80%;
+      }
+      #signup{
+        text-align: center;
+      }
+  </style>
+</head>
+
+<body>
+  <div class="nav">
+    <a href="./index.html">Signup</a>
+    <a href="./signin.html">Signin</a>
+  </div>
+  <div id="signup">
+    <h1>Sign Up</h1>
+    <form>
+      <div>
+        Full Name <br>
+        <input type="text" id="name"> <br>
+      </div>
+      <div>
+        Email <br>
+        <input type="email" id="email" required> <br>
+      </div>
+      <div>
+        Password <br>
+        <input type="password"  id="password"> <br>
+      </div>
+      <input onclick="store()" type="submit" value="Submit" />
+    </form>
+  </div>
+</body>
+<script>
+  function store(){
+    var name = document.getElementById("name");
+    var email = document.getElementById("email");
+    var pass = document.getElementById("password");
+
+    let details = JSON.parse(localStorage.getItem("account-data")) || [];
+    if(name.value.length==0 || email.value.length == 0 || pass.value.length == 0){
+      alert("Please enter all the fields below");
+    } else{
+      let userDetails = {
+        email: email.value,
+        pass: pass.value
+      }
+      details.push(userDetails);
+      localStorage.setItem("account-data",JSON.stringify(details));
+      alert("Sign up successful");
+    }
+  }
+</script>
+
+</html>

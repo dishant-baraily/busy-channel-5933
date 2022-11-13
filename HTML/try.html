@@ -1,54 +1,33 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <style>
-    .cards{
-    width: 90%;
-    height: 70%;
-    margin: auto;
-    margin-top: 20px;
-    display: flex;
-    /* border: 1px solid white; */
-}
-.cards > button{
-    display: none;
-    height: 36px;
-    width: 36px;
-    border-radius: 50%;
-    border: none;
-    margin-top: 170px;
-}
-.cards:hover > button{
-    display: block;
-    height: 36px;
-    width: 36px;
-    border-radius: 50%;
-    border: none;
-    margin-top: 170px;
-}
-.card-contain{
-    width: 94%;
-    height: 100%;
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
-}
+  <link
+     rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+   />
+   <style>
+     .card-contain{
+       width: 250px;
+       height: 420px;
+     }
 .card-contain > a{
     display: block;
-    width: 23%;
+    width: 100%;
+    height: 100%;
     text-decoration: none;
     color: black;
     font-size: 12px;
     font-family: sans-serif;
     border-radius: 12px;
     text-align: center;
-    background-color: white;
+    background-color: #F2F2F2;
 }
 .card-contain > a > div > img{
+    background-color: #F2F2F2;
     height: 60%;
     width: 68%;
     border-top-left-radius: 12px;
@@ -61,7 +40,7 @@
     font-weight: 700;
     border-radius: 12px;
     height: 44px;
-    width: 222px;
+    width: 80%;
     border: none;
     font-family: sans-serif;
 }
@@ -70,311 +49,119 @@
     font-weight: 700;
     font-family: sans-serif;
 }
-  </style>
+.cards{
+  border: 1px solid red;
+
+  margin: auto;
+}
+   </style>
 </head>
-<body style="background-color: #F2F2F2;">
+<body>
   <div class="cards">
-    <button onclick="prev()">
-        <svg class="MuiSvgIcon-root d-block img-fluid DesktopHomepage_layout_cursor__ZA7V_ MuiSvgIcon-fontSizeLarge" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path  d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path></svg>
-    </button>
-    <div class="card-contain"></div>
-    <button >
-        <svg class="MuiSvgIcon-root d-block img-fluid DesktopHomepage_layout_cursor__ZA7V_ MuiSvgIcon-fontSizeLarge" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg>
-    </button>
-</div>
-</body>
-</html>
-<script>
-  var details = 
-    [
-            {
-                href:"https://in.sugarcosmetics.com/products/matte-attack-transferproof-lipstick",
-                img:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_6f55bcac-3e42-4253-88ee-cec0fa43c62a.jpg?v=1645608270",
-                name:"Matte Attack Transferproof Lipstick",
-                price:699
-            },
-            {
-                href:"https://in.sugarcosmetics.com/products/mettle-priming-balm",
-                img:"https://cdn.shopify.com/s/files/1/0906/2558/products/382512089-mettle-priming-balm-01.jpg?v=1648654861",
-                name:"Mettle Priming Balm",
-                price:1099
-            },
-            {
-                href:"https://in.sugarcosmetics.com/products/base-of-glory-pore-minimizing-primer",
-                img:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_e9355d54-6ddb-4aa4-bdfc-176a676db886.jpg?v=1657257149",
-                name:"Base Of Glory Pore Minimizing Primer",
-                price:799
-            },
-            {
-                href:"https://in.sugarcosmetics.com/products/smudge-me-not-mini-liquid-lipstick-set-power-up-your-pout",
-                img:"https://cdn.shopify.com/s/files/1/0906/2558/products/WBG1_09f0cf83-792a-4185-8882-5e5e6909a459.jpg?v=1657814596",
-                name:"Smudge Me Not Mini Liquid Lipstick Set",
-                price:799
-            },
-            {
-                href:"https://in.sugarcosmetics.com/products/base-of-glory-pore-minimizing-primer",
-                img:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_e9355d54-6ddb-4aa4-bdfc-176a676db886.jpg?v=1657257149",
-                name:"Base Of Glory Pore Minimizing Primer",
-                price:799
-            },
-            {
-                href:"https://in.sugarcosmetics.com/products/base-of-glory-pore-minimizing-primer",
-                img:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_e9355d54-6ddb-4aa4-bdfc-176a676db886.jpg?v=1657257149",
-                name:"Base Of Glory Pore Minimizing Primer",
-                price:799
-            },
-            {
-                href:"https://in.sugarcosmetics.com/products/base-of-glory-pore-minimizing-primer",
-                img:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_e9355d54-6ddb-4aa4-bdfc-176a676db886.jpg?v=1657257149",
-                name:"Base Of Glory Pore Minimizing Primer",
-                price:799
-            },
-            {
-                href:"https://in.sugarcosmetics.com/products/base-of-glory-pore-minimizing-primer",
-                img:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_e9355d54-6ddb-4aa4-bdfc-176a676db886.jpg?v=1657257149",
-                name:"Base Of Glory Pore Minimizing Primer",
-                price:799
-            },
-
-    ]
-
-    let items = JSON.parse(localStorage.getItem("cart"))||[];
-
-   for(var i=0; i<details.length-4; i++){
-
-        let atag =  document.createElement("a");
-        atag.setAttribute("href",details[i].href);
-
-        let card = document.createElement("div");
-        card.setAttribute("class",card);
-
-        let img = document.createElement("img");
-        img.setAttribute("src",details[i].img);
-
-        let name = document.createElement("p");
-        name.innerText = details[i].name;
-
-        let price = document.createElement("h1");
-        price.innerText = "₹" + details[i].price;
-
-        let btn = document.createElement("button");
-        btn.innerText = "Add To Cart";
-        btn.setAttribute("click",function() {
-            let prodetails = {
-                img: details[i].img,
-                name: details[i].name,
-                price: details[i].price
-            }
-            items.push(prodetails);
-            localStorage.setItem("cart",JSON.stringify(items));
-        })
-        atag.append(card);
-        card.append(img,name,price,btn);
-        document.querySelector(".card-contain").append(atag);
-
-  }
-
-    function prev(){
-      for(var i=details.legth-1; i>=4; i--){
-     
-        let atag =  document.createElement("a");
-        atag.setAttribute("href",details[i].href);
-
-        let card = document.createElement("div");
-        card.setAttribute("class",card);
-
-        let img = document.createElement("img");
-        img.setAttribute("src",details[i].img);
-
-        let name = document.createElement("p");
-        name.innerText = details[i].name;
-
-        let price = document.createElement("h1");
-        price.innerText = "₹" + details[i].price;
-
-        let btn = document.createElement("button");
-        btn.innerText = "Add To Cart";
-        btn.setAttribute("click",function() {
-            let prodetails = {
-                img: details[i].img,
-                name: details[i].name,
-                price: details[i].price
-            }
-            items.push(prodetails);
-            localStorage.setItem("cart",JSON.stringify(items));
-        })
-        atag.append(card);
-        card.append(img,name,price,btn);
-        document.querySelector(".card-contain").append(atag);
-
-
-      }
-    }
-</script> -->
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    featured, .featured2 {
-  float: left;
-  margin-left: 16%;
-  margin-top: 4%;
-  width: 980px;
-  height: 450px;
-  background-color: #CFD0CD;
-
-}
-.featured img, .featured2 img {
-  width: 230px;
-  height: 360px;
-  margin-top:4%;
-  margin-left: 5%;
-  float: left;
-
-}
-.featured p, .featured2 p{
-  float: right;
-  margin-top: 5%;
-  margin-bottom: 0%;
-  margin-right: 51%;
-  width: 18%;
-  
-  font-size: 20px;
-  font-family:'poppins';
-  text-align: left;
-
-}
-.featured span, .featured2 span {
-  float: right;
-  margin-top: 0%;
-  margin-right: 4%;
-  width: 65%;
-
-  font-size: 18px;
-  font-family: Arial, Helvetica, sans-serif;
-
-    height: 75%;
-  text-align: left;
-  word-wrap: break-word;
-  word-break:normal;
-  line-height: 30px;
-  white-space: inherit;
-
-}
-
-#wrapper div:not(.active) {
-  display: none;
-}
-
-.slide-btn {
-    color: #000000;
-    float: right;
-    font-size: 19px;
-    border: 3px solid #000000;
-    padding: 5px 50px;
-    margin-right: 0%;
-    margin-top: 0%;
-    letter-spacing: 1px;
-    cursor: pointer;
-    transform: scale(1.0);
-    transition: ease-in-out 0.5s;
-
-  }
-  .slide-btn:hover {
-    transform: scale(0.9);
-    transition: ease-in-out 0.5s;
-  }
-  </style>
-</head>
-<body>
-  <div id="wrapper">
-    <input class="slide-btn" id="previous" type="button" value="previous"/>
-    <input class="slide-btn" id="next" type="button" value="next"/>
-    <div>
-        <div class="featured slide-item active">
-          <img src="photos/bookcover/Alluredbyyou.jpg" alt="" srcset="">
-          <p>ALLURED BY YOU</p>
-          <span>Lorem text part 1</span>
-        </div>
-        <div class="featured2 slide-item">
-          <img src="photos/bookcover/Notyourmarrysue.jpg" alt="" srcset="">
-          <p>Rebecca Frost</p>
-          <span>Lorem text part 2</span>
-        </div> 
+  <div style="z-index: 1;" class="swiper mySwiperb">
+    <div class="swiper-wrapper ">
+      <div class="swiper-slide card-contain">
+        <a href="https://in.sugarcosmetics.com/products/matte-attack-transferproof-lipstick">
+          <div class="swiper1 card">
+            <img src="https://cdn.shopify.com/s/files/1/0906/2558/products/1_6f55bcac-3e42-4253-88ee-cec0fa43c62a.jpg?v=1645608270" alt="">
+            <p>Matte Attack Transferproof Lipstick</p>
+            <h1>₹699</h1>
+            <button>Add To Cart</button>
+          </div>
+        </a>
+      </div>
+      <div class="swiper-slide card-contain">
+        <a href="https://in.sugarcosmetics.com/products/mettle-priming-balm">
+          <div class="swiper1 card">
+            <img src="https://cdn.shopify.com/s/files/1/0906/2558/products/382512089-mettle-priming-balm-01.jpg?v=1648654861" alt="">
+            <p>Mettle Priming Balm</p>
+            <h1>₹1099</h1>
+            <button>Add To Cart</button>
+          </div>
+        </a>
+      </div>
+      <div class="swiper-slide card-contain">
+        <a href="https://in.sugarcosmetics.com/products/base-of-glory-pore-minimizing-primer">
+          <div class="swiper1 card">
+            <img src="https://cdn.shopify.com/s/files/1/0906/2558/products/1_e9355d54-6ddb-4aa4-bdfc-176a676db886.jpg?v=1657257149" alt="">
+            <p>Base Of Glory Pore Minimizing Primer</p>
+            <h1>₹799</h1>
+            <button>Add To Cart</button>
+          </div>
+        </a>
+      </div>
+      <div class="swiper-slide card-contain">
+        <a href="https://in.sugarcosmetics.com/products/smudge-me-not-mini-liquid-lipstick-set-power-up-your-pout">
+          <div class="swiper1 card">
+            <img src="https://cdn.shopify.com/s/files/1/0906/2558/products/WBG1_09f0cf83-792a-4185-8882-5e5e6909a459.jpg?v=1657814596" alt="">
+            <p>Smudge Me Not Mini Liquid Lipstick Set</p>
+            <h1>₹799</h1>
+            <button>Add To Cart</button>
+          </div>
+        </a>
+      </div>
+      <div class="swiper-slide card-contain">
+        <a href="https://in.sugarcosmetics.com/products/contour-de-force-eyes-and-face-palette">
+          <div class="swiper1 card">
+            <img src="https://cdn.shopify.com/s/files/1/0906/2558/products/1_2d186f9b-9024-4e23-a0d2-a55b7671e89c.jpg?v=1657123108" alt="">
+            <p>Contour De Force Eyes And Face Palette</p>
+            <h1>₹1099</h1>
+            <button>Add To Cart</button>
+          </div>
+        </a>
+      </div>
+      <div class="swiper-slide card-contain">
+        <a href="https://in.sugarcosmetics.com/products/smudge-me-not-liquid-lipstick">
+          <div class="swiper1 card">
+            <img src="https://cdn.shopify.com/s/files/1/0906/2558/products/1_ef579f2e-602e-4d2f-bed2-bf0efdf4f184.jpg?v=1644325813" alt="">
+            <p>Smudge Me Not Liquid Lipstick</p>
+            <h1>₹499</h1>
+            <button>Add To Cart</button>
+          </div>
+        </a>
+      </div>
+      <div class="swiper-slide card-contain">
+        <a href="https://in.sugarcosmetics.com/products/kohl-of-honour-intense-kajal-1">
+          <div class="swiper1 card">
+            <img src="https://cdn.shopify.com/s/files/1/0906/2558/products/01.jpg?v=1644399711" alt="">
+            <p>Kohl Of Honour Intense Kajals</p>
+            <h1>₹249</h1>
+            <button>Add To Cart</button>
+          </div>
+        </a>
+      </div>
+      <div class="swiper-slide card-contain">
+        <a href="https://in.sugarcosmetics.com/products/blend-the-rules-eyeshadow-palette">
+          <div class="swiper1 card">
+            <img src="https://cdn.shopify.com/s/files/1/0906/2558/products/01_59809bd6-49ef-4c6b-b262-47002bedc963.jpg?v=1639755559" alt="">
+            <p>Blend The Rules Eyeshadow Palette</p>
+            <h1>₹1199</h1>
+            <button>Add To Cart</button>
+          </div>
+        </a>
+      </div>
     </div>
-    <div>
-        <div class="featured slide-item active">
-          <img src="photos/bookcover/Alluredbyyou.jpg" alt="" srcset="">
-          <p>ALLURED BY YOU</p>
-          <span>Lorem text part 1</span>
-        </div>
-        <div class="featured2 slide-item">
-          <img src="photos/bookcover/Notyourmarrysue.jpg" alt="" srcset="">
-          <p>Rebecca Frost</p>
-          <span>Lorem text part 2</span>
-        </div> 
+    <div class="swiper-btn">
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
     </div>
+  </div>
   </div>
 </body>
 </html>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
 <script>
-
-const scrollButtons = document.querySelectorAll('.slide-btn')
-const slideItems = Array.apply(
-    null,
-  document.querySelectorAll('.slide-item')
-)
-
-const getActiveIndex = () => slideItems.findIndex(item => {
-    return item.classList.contains('active')
-})
-
-scrollButtons.forEach(btn => {
-    btn.addEventListener('click', ({ target }) => {
-    const activeIndex = getActiveIndex()
-    slideItems[activeIndex].classList.remove('active')
-
-    let newActiveIndex
-    if (target.id === 'previous') {
-      newActiveIndex = activeIndex === 0 ? slideItems.length - 1 : activeIndex - 1
-    } else {
-      newActiveIndex = activeIndex === slideItems.length - 1 ? 0 : activeIndex + 1
-    }
-
-    slideItems[newActiveIndex].classList.add('active')
-  })
-})
-</script> -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <div style="display: flex;">
-    <video style="border: 1px solid red;"  onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" width="500" height="400" autoplay loop>
-    <source  src="https://cdn4.fireworktv.com/medias/2022/11/8/1667907533-zhrmtkcn/watermarked/540/Y2Mate.is-Bollywood1990vs2022MakeupshortsSUGARCosmetics-UavyluCenIQ-720p-1658012746503.mp4" type="video/mp4">
-  </video>
-  <video  onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" width="320" height="240" autoplay loop>
-    <source src="https://cdn4.fireworktv.com/medias/2022/11/8/1667907533-zhrmtkcn/watermarked/540/Y2Mate.is-Bollywood1990vs2022MakeupshortsSUGARCosmetics-UavyluCenIQ-720p-1658012746503.mp4" type="video/mp4">
-  </video>
-  <video  onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" width="320" height="240" autoplay loop>
-    <source src="https://cdn4.fireworktv.com/medias/2022/11/8/1667907533-zhrmtkcn/watermarked/540/Y2Mate.is-Bollywood1990vs2022MakeupshortsSUGARCosmetics-UavyluCenIQ-720p-1658012746503.mp4" type="video/mp4">
-  </video>
-  <video  onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" width="320" height="240" autoplay loop>
-    <source src="https://cdn4.fireworktv.com/medias/2022/11/8/1667907533-zhrmtkcn/watermarked/540/Y2Mate.is-Bollywood1990vs2022MakeupshortsSUGARCosmetics-UavyluCenIQ-720p-1658012746503.mp4" type="video/mp4">
-  </video>
-  <video  onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" width="320" height="240" autoplay loop>
-    <source src="https://cdn4.fireworktv.com/medias/2022/11/8/1667907533-zhrmtkcn/watermarked/540/Y2Mate.is-Bollywood1990vs2022MakeupshortsSUGARCosmetics-UavyluCenIQ-720p-1658012746503.mp4" type="video/mp4">
-  </video>
-  </div>
-  
-</body>
-</html>
+  var swiper = new Swiper(".mySwiperb", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    slidesPerGroup: 4,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>

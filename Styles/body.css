@@ -17,6 +17,7 @@
 }
 #nav_contain{
     height: 128px;
+    z-index: 100;
     position: fixed;
     top: 0;
     left: 0;
@@ -43,11 +44,27 @@
     /* border: 1px solid white; */
     width: 700px;
 }
+.input-foot {
+    width: 700px;
+    height: 80px;
+    margin: auto;
+}
 .input-div > input{
     width: 500px;
     border-radius: 8px 0 0 8px;
     border: 1px solid #989898;
     background-color: #212121;
+    outline: none;
+    height: 50%;
+    margin-top: 15px;
+    padding-left: 20px;
+    color: white;
+}
+.input-foot > input{
+    width: 500px;
+    border-radius: 8px 0 0 8px;
+    border: 1px solid #989898;
+    background-color: white;
     outline: none;
     height: 50%;
     margin-top: 15px;
@@ -62,7 +79,15 @@
     background-color: white;
     margin-left: -5px;
 }
-.login-div{
+.input-foot > button{
+    height: 55%;
+    width: 100px;
+    color: white;
+    border-radius: 0 8px 8px 0;
+    background-color: black;
+    margin-left: -5px;
+}
+.login-div{ 
     width: 200px;
     display: flex;
     padding-left: 80px;
@@ -165,10 +190,8 @@
     margin-top: 10px;
 }
 #body{
-    height: 20000px;
     margin-left: -8px;
     width: 101%;
-    border: 1px solid red;
     margin-top: 128px;
 }
 .slider{
@@ -190,15 +213,58 @@
     padding-top: 30px;
     height: 600px;
 }
-.cards{
+/* .cards{
     width: 90%;
     height: 70%;
     margin: auto;
     margin-top: 20px;
     display: flex;
-    /* border: 1px solid white; */
+    /* border: 1px solid white; 
+} */
+.card-contain{
+    width: 100%;
+  }
+.card-contain > a{
+ display: block;
+ width: 100%;
+ height: 100%;
+ text-decoration: none;
+ color: black;
+ font-size: 12px;
+ font-family: sans-serif;
+ border-radius: 12px;
+ text-align: center;
+ background-color: #F2F2F2;
 }
-.cards > button{
+.card-contain > a > div > img{
+ background-color: #F2F2F2;
+ height: 60%;
+ width: 68%;
+ border-top-left-radius: 12px;
+ border-top-right-radius: 12px;
+}
+.card-contain > a > div > button{
+ background-color: black;
+ color: white;
+ font-size: 14px;
+ font-weight: 700;
+ border-radius: 12px;
+ height: 44px;
+ width: 80%;
+ border: none;
+ font-family: sans-serif;
+}
+.card-contain > a > div > h1{
+ font-size: 18px;
+ font-weight: 700;
+ font-family: sans-serif;
+}
+.cards{
+height: 420px;
+width: 85%;
+margin: auto;
+}
+/* .cards > button{
     display: none;
     height: 36px;
     width: 36px;
@@ -246,7 +312,7 @@
     font-weight: 700;
     border-radius: 12px;
     height: 44px;
-    width: 222px;
+    width: 80%;
     border: none;
     font-family: sans-serif;
 }
@@ -254,7 +320,7 @@
     font-size: 18px;
     font-weight: 700;
     font-family: sans-serif;
-}
+} */
 /* slider */
 .swiper {
     width: 94%;
@@ -303,6 +369,7 @@
     width: 100%;
     border-radius: 12px;
   }
+  /* slider */
   .card-contain1{
     width: 94%;
     height: 100%;
@@ -336,7 +403,7 @@
     font-weight: 700;
     border-radius: 12px;
     height: 44px;
-    width: 222px;
+    width: 80%;
     border: none;
     font-family: sans-serif;
 }
@@ -345,3 +412,166 @@
     font-weight: 700;
     font-family: sans-serif;
 }
+.slidera{
+    width: 95%;
+    margin: auto;
+    height: 350px;
+}
+.slidera > a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.slidera > a > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+/* .newBack{
+    border: 1px solid red;
+    width: 100%;
+    left: 0;
+    right: 0;
+    background-image: url("https://media.sugarcosmetics.com/upload/VTOBackgroungTexture.png");
+} */
+.swipera {
+    width: 80%;
+    border-radius: 12px;
+    margin: auto;
+    margin-top: 20px;
+    height: 400px;
+}
+.swiper-slidea::after {
+    content:url("https://www.wonderplugin.com/download/playbutton.png");
+    z-index:999;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-32px;
+    margin-top:-32px;
+    opacity:0.8;
+}
+.swiper-slidea > video  {
+    object-fit: cover;
+    border-radius: 12px;
+}
+.above-f{
+    background-image: url('https://in.sugarcosmetics.com/desc-images/Rectangle_background.svg');
+    width: 100%;
+    height: 300px;
+    margin-top: 30px;
+    margin: auto;
+    justify-content: space-between;
+}
+hr{
+    margin-top: 50px;
+    width: 94%;
+    background-color: #D3D3D3;
+    height: 2px;
+    border: none;
+    margin-top: 25px;
+}
+.footerhr{
+    width: 94%;
+    margin: auto;
+    border-top: 1px solid #969696;
+    border-bottom: 1px solid #969696;
+    height: 76px;
+    margin-top: 25px;
+}
+.footerhr1{
+    width: 94%;
+    margin: auto;
+    border-bottom: 1px solid #969696;
+    height: 192px;
+}
+.footer1{
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+}
+.footer1 > a{
+    color: white;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding-top: 25px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.footer1 > a:hover{
+    text-decoration: underline;
+}
+.footer{
+    background-color: black;
+}
+
+.footer > img{
+    margin-top: -80px;
+    margin-left: 630px;
+    width: 150px;
+    height: 150px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border: 15px solid black;
+    background-color: black;
+}
+.socials{
+    width: 24%;
+    height: 28px;
+    margin-top: 160px;
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+}
+.socials > div > a{
+    display: block;
+    background-color: #969696;
+    border-radius: 50%;
+    height: 100%;
+    width: 28px;
+}
+.socials > div:hover > a{
+    background-color: white;
+}
+.socials > div > a > svg{
+    width: 70%;
+    height: 70%;
+    margin-left: 4px;
+    margin-top: 5px;
+}
+.support{
+    color: white;
+    justify-content: space-around;
+    padding-left: 35px;
+    font-family: sans-serif;
+    font-weight: 500;
+    display: flex;
+    height: 70%;
+}
+.end{
+    padding-left: 400px;
+    height: 69px;
+    width: 94%;
+    margin: auto;
+    display: flex;
+    color: white;
+    line-height: 10px;
+    font-family: sans-serif;
+}
+.end > div > p{
+    color: #969696;
+}
+.end > div > h3{
+    font-weight: 500;
+}
+.end > a{
+    margin-left: 30px;
+    margin-top: 10px ;
+    display: block;
+    border-radius: 12px;
+    width: 140px;
+    height: 60%;
+}
+
