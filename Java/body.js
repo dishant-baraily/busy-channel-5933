@@ -65,6 +65,487 @@ var myA = document.getElementById("mainA");
     }
     setInterval(changeImagea,3000);
 
+    var items = JSON.parse(localStorage.getItem("cart")) || [];
+    function store(){
+        var img = document.getElementById("cart_img").src;
+        var name = document.getElementById("cart_name").innerText;
+        var price = document.getElementById("cart_price").innerText;
+        var details = {
+            img: img,
+            name: name,
+            price: price
+        }
+        items.push(details);
+        localStorage.setItem("cart",JSON.stringify(items));
+    }
+    function store1(){
+        var img = document.getElementById("cart_img1").src;
+        var name = document.getElementById("cart_name1").innerText;
+        var price = document.getElementById("cart_price1").innerText;
+        var details = {
+            img: img,
+            name: name,
+            price: price
+        }
+        items.push(details);
+        localStorage.setItem("cart",JSON.stringify(items));
+    }
+    function store2(){
+        var img = document.getElementById("cart_img2").src;
+        var name = document.getElementById("cart_name2").innerText;
+        var price = document.getElementById("cart_price2").innerText;
+        var details = {
+            img: img,
+            name: name,
+            price: price
+        }
+        items.push(details);
+        localStorage.setItem("cart",JSON.stringify(items));
+    }
+    function store3(){
+        var img = document.getElementById("cart_img3").src;
+        var name = document.getElementById("cart_name3").innerText;
+        var price = document.getElementById("cart_price3").innerText;
+        var details = {
+            img: img,
+            name: name,
+            price: price
+        }
+        items.push(details);
+        localStorage.setItem("cart",JSON.stringify(items));
+    }
+    function store4(){
+        var img = document.getElementById("cart_img4").src;
+        var name = document.getElementById("cart_name4").innerText;
+        var price = document.getElementById("cart_price4").innerText;
+        var details = {
+            img: img,
+            name: name,
+            price: price
+        }
+        items.push(details);
+        localStorage.setItem("cart",JSON.stringify(items));
+    }
+    function store5(){
+        var img = document.getElementById("cart_img5").src;
+        var name = document.getElementById("cart_name5").innerText;
+        var price = document.getElementById("cart_price5").innerText;
+        var details = {
+            img: img,
+            name: name,
+            price: price
+        }
+        items.push(details);
+        localStorage.setItem("cart",JSON.stringify(items));
+    }
+    function store6(){
+        var img = document.getElementById("cart_img6").src;
+        var name = document.getElementById("cart_name6").innerText;
+        var price = document.getElementById("cart_price6").innerText;
+        var details = {
+            img: img,
+            name: name,
+            price: price
+        }
+        items.push(details);
+        localStorage.setItem("cart",JSON.stringify(items));
+    }
+    function store7(){
+        var img = document.getElementById("cart_img7").src;
+        var name = document.getElementById("cart_name7").innerText;
+        var price = document.getElementById("cart_price7").innerText;
+        var details = {
+            img: img,
+            name: name,
+            price: price
+        }
+        items.push(details);
+        localStorage.setItem("cart",JSON.stringify(items));
+    }
+    function store8(){
+        var img = document.getElementById("cart_img8").src;
+        var name = document.getElementById("cart_name8").innerText;
+        var price = document.getElementById("cart_price8").innerText;
+        var details = {
+            img: img,
+            name: name,
+            price: price
+        }
+        items.push(details);
+        localStorage.setItem("cart",JSON.stringify(items));
+    }
+    function store9(){
+        var img = document.getElementById("cart_img9").src;
+        var name = document.getElementById("cart_name9").innerText;
+        var price = document.getElementById("cart_price9").innerText;
+        var details = {
+            img: img,
+            name: name,
+            price: price
+        }
+        items.push(details);
+        localStorage.setItem("cart",JSON.stringify(items));
+    }
+    function store10(){
+        var img = document.getElementById("cart_img10").src;
+        var name = document.getElementById("cart_name10").innerText;
+        var price = document.getElementById("cart_price10").innerText;
+        var details = {
+            img: img,
+            name: name,
+            price: price
+        }
+        items.push(details);
+        localStorage.setItem("cart",JSON.stringify(items));
+    }
+    function store11(){
+        var img = document.getElementById("cart_img11").src;
+        var name = document.getElementById("cart_name11").innerText;
+        var price = document.getElementById("cart_price11").innerText;
+        var details = {
+            img: img,
+            name: name,
+            price: price
+        }
+        items.push(details);
+        localStorage.setItem("cart",JSON.stringify(items));
+    }
+    function store12(){
+        var img = document.getElementById("cart_img12").src;
+        var name = document.getElementById("cart_name12").innerText;
+        var price = document.getElementById("cart_price12").innerText;
+        var details = {
+            img: img,
+            name: name,
+            price: price
+        }
+        items.push(details);
+        localStorage.setItem("cart",JSON.stringify(items));
+    }
+    function store13(){
+        var img = document.getElementById("cart_img13").src;
+        var name = document.getElementById("cart_name13").innerText;
+        var price = document.getElementById("cart_price13").innerText;
+        var details = {
+            img: img,
+            name: name,
+            price: price
+        }
+        items.push(details);
+        localStorage.setItem("cart",JSON.stringify(items));
+    }
+    function store14(){
+        var img = document.getElementById("cart_img14").src;
+        var name = document.getElementById("cart_name14").innerText;
+        var price = document.getElementById("cart_price14").innerText;
+        var details = {
+            img: img,
+            name: name,
+            price: price
+        }
+        items.push(details);
+        localStorage.setItem("cart",JSON.stringify(items));
+    }
+    function store15(){
+        var img = document.getElementById("cart_img15").src;
+        var name = document.getElementById("cart_name15").innerText;
+        var price = document.getElementById("cart_price15").innerText;
+        var details = {
+            img: img,
+            name: name,
+            price: price
+        }
+        items.push(details);
+        localStorage.setItem("cart",JSON.stringify(items));
+    }
+    function store16(){
+        var img = document.getElementById("cart_img16").src;
+        var name = document.getElementById("cart_name16").innerText;
+        var price = document.getElementById("cart_price16").innerText;
+        var details = {
+            img: img,
+            name: name,
+            price: price
+        }
+        items.push(details);
+        localStorage.setItem("cart",JSON.stringify(items));
+    }
+    function store17(){
+        var img = document.getElementById("cart_img17").src;
+        var name = document.getElementById("cart_name17").innerText;
+        var price = document.getElementById("cart_price17").innerText;
+        var details = {
+            img: img,
+            name: name,
+            price: price
+        }
+        items.push(details);
+        localStorage.setItem("cart",JSON.stringify(items));
+    }
+    function store18(){
+        var img = document.getElementById("cart_img18").src;
+        var name = document.getElementById("cart_name18").innerText;
+        var price = document.getElementById("cart_price18").innerText;
+        var details = {
+            img: img,
+            name: name,
+            price: price
+        }
+        items.push(details);
+        localStorage.setItem("cart",JSON.stringify(items));
+    }
+    function store19(){
+        var img = document.getElementById("cart_img19").src;
+        var name = document.getElementById("cart_name19").innerText;
+        var price = document.getElementById("cart_price19").innerText;
+        var details = {
+            img: img,
+            name: name,
+            price: price
+        }
+        items.push(details);
+        localStorage.setItem("cart",JSON.stringify(items));
+    }
+    function store20(){
+        var img = document.getElementById("cart_img20").src;
+        var name = document.getElementById("cart_name20").innerText;
+        var price = document.getElementById("cart_price20").innerText;
+        var details = {
+            img: img,
+            name: name,
+            price: price
+        }
+        items.push(details);
+        localStorage.setItem("cart",JSON.stringify(items));
+    }
+    function store21(){
+        var img = document.getElementById("cart_img21").src;
+        var name = document.getElementById("cart_name21").innerText;
+        var price = document.getElementById("cart_price21").innerText;
+        var details = {
+            img: img,
+            name: name,
+            price: price
+        }
+        items.push(details);
+        localStorage.setItem("cart",JSON.stringify(items));
+    }
+    function store22(){
+        var img = document.getElementById("cart_img22").src;
+        var name = document.getElementById("cart_name22").innerText;
+        var price = document.getElementById("cart_price22").innerText;
+        var details = {
+            img: img,
+            name: name,
+            price: price
+        }
+        items.push(details);
+        localStorage.setItem("cart",JSON.stringify(items));
+    }
+    function store23(){
+        var img = document.getElementById("cart_img23").src;
+        var name = document.getElementById("cart_name23").innerText;
+        var price = document.getElementById("cart_price23").innerText;
+        var details = {
+            img: img,
+            name: name,
+            price: price
+        }
+        items.push(details);
+        localStorage.setItem("cart",JSON.stringify(items));
+    }
+    function store24(){
+        var img = document.getElementById("cart_img24").src;
+        var name = document.getElementById("cart_name24").innerText;
+        var price = document.getElementById("cart_price24").innerText;
+        var details = {
+            img: img,
+            name: name,
+            price: price
+        }
+        items.push(details);
+        localStorage.setItem("cart",JSON.stringify(items));
+    }
+    function store25(){
+        var img = document.getElementById("cart_img25").src;
+        var name = document.getElementById("cart_name25").innerText;
+        var price = document.getElementById("cart_price25").innerText;
+        var details = {
+            img: img,
+            name: name,
+            price: price
+        }
+        items.push(details);
+        localStorage.setItem("cart",JSON.stringify(items));
+    }
+    function store26(){
+        var img = document.getElementById("cart_img26").src;
+        var name = document.getElementById("cart_name26").innerText;
+        var price = document.getElementById("cart_price26").innerText;
+        var details = {
+            img: img,
+            name: name,
+            price: price
+        }
+        items.push(details);
+        localStorage.setItem("cart",JSON.stringify(items));
+    }
+    function store27(){
+        var img = document.getElementById("cart_img27").src;
+        var name = document.getElementById("cart_name27").innerText;
+        var price = document.getElementById("cart_price27").innerText;
+        var details = {
+            img: img,
+            name: name,
+            price: price
+        }
+        items.push(details);
+        localStorage.setItem("cart",JSON.stringify(items));
+    }
+    function store28(){
+        var img = document.getElementById("cart_img28").src;
+        var name = document.getElementById("cart_name28").innerText;
+        var price = document.getElementById("cart_price28").innerText;
+        var details = {
+            img: img,
+            name: name,
+            price: price
+        }
+        items.push(details);
+        localStorage.setItem("cart",JSON.stringify(items));
+    }
+    function store29(){
+        var img = document.getElementById("cart_img29").src;
+        var name = document.getElementById("cart_name29").innerText;
+        var price = document.getElementById("cart_price29").innerText;
+        var details = {
+            img: img,
+            name: name,
+            price: price
+        }
+        items.push(details);
+        localStorage.setItem("cart",JSON.stringify(items));
+    }
+    function store30(){
+        var img = document.getElementById("cart_img30").src;
+        var name = document.getElementById("cart_name30").innerText;
+        var price = document.getElementById("cart_price30").innerText;
+        var details = {
+            img: img,
+            name: name,
+            price: price
+        }
+        items.push(details);
+        localStorage.setItem("cart",JSON.stringify(items));
+    }
+    function store31(){
+        var img = document.getElementById("cart_img31").src;
+        var name = document.getElementById("cart_name31").innerText;
+        var price = document.getElementById("cart_price31").innerText;
+        var details = {
+            img: img,
+            name: name,
+            price: price
+        }
+        items.push(details);
+        localStorage.setItem("cart",JSON.stringify(items));
+    }
+    function store32(){
+        var img = document.getElementById("cart_img32").src;
+        var name = document.getElementById("cart_name32").innerText;
+        var price = document.getElementById("cart_price32").innerText;
+        var details = {
+            img: img,
+            name: name,
+            price: price
+        }
+        items.push(details);
+        localStorage.setItem("cart",JSON.stringify(items));
+    }
+    function store33(){
+        var img = document.getElementById("cart_img33").src;
+        var name = document.getElementById("cart_name33").innerText;
+        var price = document.getElementById("cart_price33").innerText;
+        var details = {
+            img: img,
+            name: name,
+            price: price
+        }
+        items.push(details);
+        localStorage.setItem("cart",JSON.stringify(items));
+    }
+    function store34(){
+        var img = document.getElementById("cart_img34").src;
+        var name = document.getElementById("cart_name34").innerText;
+        var price = document.getElementById("cart_price34").innerText;
+        var details = {
+            img: img,
+            name: name,
+            price: price
+        }
+        items.push(details);
+        localStorage.setItem("cart",JSON.stringify(items));
+    }
+    function store35(){
+        var img = document.getElementById("cart_img35").src;
+        var name = document.getElementById("cart_name35").innerText;
+        var price = document.getElementById("cart_price35").innerText;
+        var details = {
+            img: img,
+            name: name,
+            price: price
+        }
+        items.push(details);
+        localStorage.setItem("cart",JSON.stringify(items));
+    }
+    function store36(){
+        var img = document.getElementById("cart_img36").src;
+        var name = document.getElementById("cart_name36").innerText;
+        var price = document.getElementById("cart_price36").innerText;
+        var details = {
+            img: img,
+            name: name,
+            price: price
+        }
+        items.push(details);
+        localStorage.setItem("cart",JSON.stringify(items));
+    }
+    function store37(){
+        var img = document.getElementById("cart_img37").src;
+        var name = document.getElementById("cart_name37").innerText;
+        var price = document.getElementById("cart_price37").innerText;
+        var details = {
+            img: img,
+            name: name,
+            price: price
+        }
+        items.push(details);
+        localStorage.setItem("cart",JSON.stringify(items));
+    }
+    function store38(){
+        var img = document.getElementById("cart_img38").src;
+        var name = document.getElementById("cart_name38").innerText;
+        var price = document.getElementById("cart_price38").innerText;
+        var details = {
+            img: img,
+            name: name,
+            price: price
+        }
+        items.push(details);
+        localStorage.setItem("cart",JSON.stringify(items));
+    }
+    function store39(){
+        var img = document.getElementById("cart_img39").src;
+        var name = document.getElementById("cart_name39").innerText;
+        var price = document.getElementById("cart_price39").innerText;
+        var details = {
+            img: img,
+            name: name,
+            price: price
+        }
+        items.push(details);
+        localStorage.setItem("cart",JSON.stringify(items));
+    }
     //Cards
     // var details = 
     // [
