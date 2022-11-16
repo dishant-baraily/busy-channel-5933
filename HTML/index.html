@@ -36,6 +36,7 @@
   <div class="nav">
     <a href="./index.html">Signup</a>
     <a href="./signin.html">Signin</a>
+    <a href="./body.html">Home</a>
   </div>
   <div id="signup">
     <h1>Sign Up</h1>
@@ -63,6 +64,7 @@
     var pass = document.getElementById("password");
 
     let details = JSON.parse(localStorage.getItem("account-data")) || [];
+    
     if(name.value.length==0 || email.value.length == 0 || pass.value.length == 0){
       alert("Please enter all the fields below");
     } else{

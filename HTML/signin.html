@@ -33,6 +33,7 @@
     <div class="nav">
         <a href="./index.html">Signup</a>
         <a href="./signin.html">Signin</a>
+        <a href="./body.html">Home</a>
       </div>
       <div id="signin">
         <h1>Please Enter Your Details</h1>
@@ -45,7 +46,7 @@
             Password <br>
             <input type="password"  id="password"> <br>
           </div>
-          <input id="login()" type="submit" value="Submit" />
+          <input onclick="login()"  type="submit" value="Submit" />
         </form>
       </div>
 </body>
@@ -54,22 +55,26 @@
     let userData = JSON.parse(localStorage.getItem("account-data"));
 
     let email = document.getElementById("email").value;
-    let pass = document.getElementById("password").value;
-    console.log(userData);
-      var count = 0;
-      for(var i=0; i<userData.length; i++){
+    let pass = document.getElementById("password").value;   
+      
         if(email.length == 0 || pass.length == 0){
-            alert("Please enter all the fields below");
-        } else if(userData[i].email == email && userData[i].pass == pass){
-          count++;
-          break;
-        }
-      }
-      if(count>0){
-        alert("Sign in Successful");
-      } else{
-        alert("Wrong Credentials");
-      }
+          alert("Please enter all the fields below");
+        } else
+          for(var i=0; i<userData.length; i++){
+              var count = 0;
+              if(userData[i].email == email && userData[i].pass == pass){
+                alert("Sign in Successful");
+                break;
+              } else{
+                count++;
+              }
+          }
+          if(count>0){
+            alert("Wrong Credentials");
+          }
+ 
+          
+
   }
 </script>
 </html>
